@@ -1,8 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/competences">Compétences</router-link>
-    <router-link to="/projets">Projets</router-link>
+    <router-link to="/"><img src="./assets/logo-nav.png" alt=""></router-link>
+    <ul>
+      <li><router-link to="/competences">Compétences</router-link></li>
+      <li><router-link to="/projets">Projets</router-link></li>
+    </ul>
   </nav>
   <router-view/>
 </template>
@@ -28,25 +30,39 @@
 }
 
 body {
-  background-color: #010512;
+  background: linear-gradient(to right, #010512, #04071b, #010512);;
   margin: 0;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #9eb3c2;
+  font-weight: bold;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
-  padding: 30px;
+  justify-content: space-between;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, #010512, #788bff, #010512) 1;
   background: linear-gradient(to right, #010512, #020831, #010512);
+  width: 100%;
+}
+
+nav img {
+  height: 100px;
+  margin: 5px 30px;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding: 30px;
+  list-style: none;
 }
 
 nav a {
@@ -58,9 +74,26 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #5465ff;
+  color: #9eb3c2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  border-bottom: 2px solid #5465ff;
+  border-bottom: 2px solid #9eb3c2;
   font-weight: bolder;
+  font-size: 1.3em;
 }
+
+h1 {
+    font-size: 2.5em;
+    color: #788bff;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    font-size: 54px
+  }
+
+  h2 {
+    font-size: 1.8em;
+    color: #9eb3c2;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    font-size: 36px;
+  }
 </style>

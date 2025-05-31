@@ -242,7 +242,7 @@
     font-size: 28px;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, #010512, #788bff, #010512) 1;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .skills-container {
     display: flex;
@@ -273,8 +273,8 @@
     width: 20%;
 }
 .skills-container div div p {
-    margin-top: 10px;
-    font-size: 20px;
+    margin: 20px 0px 10px;
+    font-size: 16px;
 }
 svg {
     width: 50px;

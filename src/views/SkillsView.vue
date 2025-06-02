@@ -1,6 +1,7 @@
 <template>
   <div class="skills">
     <h1>Compétences</h1>
+    <p style="padding: 0 50px 10px;">Voici un aperçu de mes compétences techniques et des technologies que j'utilise dans mes projets. Pour plus de détails sur mes diverses expériences professionnelles, vous pouvez consulter la page <a href="/projets">Projets</a>, ou alors <a href="http://">consulter</a> ou <a href="http://">télécharger</a> mon CV.</p>
     <div class="skills-container">
         <section class="languages">
             <h2>Langages de programmation</h2>
@@ -234,9 +235,6 @@
     align-items: center;
     padding: 50px 20px;
 }
-.skills h1 {
-    margin-bottom: 20px;
-}
 .skills h2 {
     margin: 10px 0;
     font-size: 28px;
@@ -250,12 +248,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
 }
 .skills-container section {
     width: 40%;
     border-bottom: 1px solid;
     border-top: 1px solid;
     border-image: linear-gradient(to right, #010512, #788bff, #010512) 1;
+    background: linear-gradient(to right, #01051200, #020831, #01051200);
 }
 .skills-container section div {
     display: flex;
@@ -287,7 +287,12 @@ svg {
 .skills-container div div:hover p {
     color: #4a6eff;
 }
-
+a {
+    color: #788bff;
+}
+a:hover {
+    color: #ffffffc5;
+}
 @media (max-width: 800px) {
     .skills-container div div {
         width: 45%;

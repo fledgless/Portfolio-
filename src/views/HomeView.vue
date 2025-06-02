@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <div>
+    <div class="content">
       <h1>Cameron Cardinal</h1>
       <h2>Développeur Web</h2>
       <div class="social-links">
@@ -25,6 +25,13 @@
         </a>
       </div>
       <h3>Bienvenue sur mon portfolio !</h3>
+      <p class="presentation">
+        Je suis un développeur web passionné par la création d'applications et de sites web. Vous pouvez découvrir mes compétences et mes projets.
+        <br>
+        N'hésitez pas à me contacter via les liens sociaux ci-dessus pour toute question ou collaboration.
+        <br>
+        Merci de votre visite et bonne exploration !
+      </p>
     </div>
   </div>
 </template>
@@ -38,11 +45,19 @@
     height: 50vh;
     text-align: left;
     padding: 30px 10px;
+    margin-top: 75px;
   }
+  .content {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+  }
   img {
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: auto;
     border-radius: 50%;
     margin-right: 20px;
   }
@@ -51,7 +66,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 65%;
+    width: 25%;
   }
 
   svg {
@@ -78,11 +93,21 @@
     .home {
       flex-direction: column;
       text-align: center;
+      align-items: center;
+      padding: 30px;
+      width: 100%;
     }
     img {
-      margin: 30px 0 0;
-      width: 200px;
-      height: 200px;
+      display: none;
+    }
+    .content {
+      margin-top: 100px;
+      width: 100%;
+      align-items: center;
+    }
+    .social-links {
+      width: 100%;
+      justify-content: center;
     }
   }
 </style>
